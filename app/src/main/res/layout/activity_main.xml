@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#122926"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="24dp"
+        tools:layout_editor_absoluteY="24dp">
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="230dp"
+            android:layout_below="@id/heading"
+            android:layout_marginTop="15dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/cafe"></ImageView>
+
+        <TextView
+            android:id="@+id/heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:text="Welcome"
+            android:textColor="#C1D312"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/subheading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/heading"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="23dp"
+            android:layout_marginBottom="172dp"
+            android:text="Table Booking and Rating Application"
+            android:textColor="#C1D312"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/userHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/subheading"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="33sp"
+            android:layout_marginTop="7dp"
+            android:text="Enter Username"
+            android:textColor="#C1D312"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/userHeading"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="23dp"
+            android:ems="14"
+            android:gravity="center_horizontal"
+            android:textColor="#C1D312" />
+
+        <TextView
+            android:id="@+id/passHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/username"
+            android:layout_centerHorizontal="true"
+            android:text="Enter Password"
+            android:textColor="#C1D312"
+            android:textSize="16sp" />
+
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/username"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="23dp"
+            android:ems="14"
+            android:gravity="center_horizontal"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/login"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/password"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="65dp"
+            android:background="#C1D312"
+            android:onClick="loginClick"
+            android:text="Login"
+            android:textColor="#122926"
+            android:textSize="18dp" />
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
